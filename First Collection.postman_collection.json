@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "21de7ebf-b7f6-47b1-a838-d5bbf80d48bf",
+		"name": "First Collection",
+		"description": "Creating a collection of GET, POST, PUT and DELETE requests using db.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/mentors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \"id\": 5,\n        \"name\": \"Megha Mentor\",\n        \"available\": true,\n        \"mentorship_category\": 1,\n        \"about\": \"I am etc etc \",\n        \"professional\": false,\n        \"student\": true,\n        \"company/school\": \"Nanyang Technological University\",\n        \"gratitude\": 0,\n        \"interests\": [\n            {\n                \"id\": 3,\n                \"level\": 1\n            }\n        ]\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentors"
+					]
+				},
+				"description": "GET request to see list of mentors\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentees"
+					]
+				},
+				"description": "GET request to get list of mentees"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \"id\": 5,\n        \"name\": \"Megha Mentor\",\n        \"available\": true,\n        \"mentorship_category\": 1,\n        \"about\": \"I am etc etc \",\n        \"professional\": false,\n        \"student\": true,\n        \"company/school\": \"Nanyang Technological University\",\n        \"gratitude\": 0,\n        \"interests\": [\n            {\n                \"id\": 3,\n                \"level\": 1\n            }\n        ]\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \t\"id\":103,\n        \t\"name\":\"Rahul\",\n        \t\"interests\":\"Data Science\"\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentees",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \t\"id\":103,\n        \t\"name\":\"Ram\",\n        \t\"interests\":\"Data Science\"\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentees/103",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentees",
+						"103"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentees/103",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \t\"id\":103,\n        \t\"name\":\"Ram\",\n        \t\"interests\":\"Data Science\"\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentees/103",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentees",
+						"103"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentees/104",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \t\"id\":103,\n        \t\"name\":\"Ram\",\n        \t\"interests\":\"Data Science\"\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentees/104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentees",
+						"104"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
